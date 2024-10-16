@@ -1,22 +1,32 @@
 
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0f0f0f; /* Dark background to give a tech feel */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    color: #e0e0e0; /* Light text for contrast */
 }
 
+/* Navbar */
 .navbar {
-    background-color: #333;
-    color: white;
-    padding: 15px;
+    background-color: #1f1f1f;
+    padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #33FFCC; /* Neon green, symbolizing data flow */
 }
 
 .navbar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 10px;
 }
 
 .navbar li {
@@ -25,38 +35,110 @@ body {
 }
 
 .navbar a {
-    color: white;
+    text-decoration: none;
+    color: #33FFCC;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FF5733; /* Bright orange for hover effect */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Tech-themed gradient */
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+.projects {
+    margin: 30px;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(51, 255, 204, 0.3);
+}
+
+.project-card {
+    background-color: #292929;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card h3 {
+    color: #33FFCC;
+}
+
+.project-card a {
+    color: #FF5733;
     text-decoration: none;
     font-weight: bold;
 }
 
-.hero {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 50px;
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 87, 51, 0.5);
 }
 
-.projects, .about, .contact {
+/* About Me Section */
+.about {
     margin: 30px;
-    padding: 20px;
-    background-color: white;
+    padding: 30px;
+    background-color: #141414;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(255, 87, 51, 0.2);
 }
 
-.project-card {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.about p {
+    line-height: 1.6;
 }
 
+/* Contact Section */
+.contact {
+    margin: 30px;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #33FFCC;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 .footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
     position: fixed;
     width: 100%;
     bottom: 0;
